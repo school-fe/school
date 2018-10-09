@@ -10,8 +10,6 @@
   margin-bottom: 40px;
 }
 .hy-friends-list {
-  // max-width: 1920px;
-  // min-width: 1280px;
   margin: 0 auto;
   height: 400px;
   * {
@@ -47,7 +45,8 @@
       position: absolute;
       z-index: 2;
       text-align: center;
-      top: 167px;
+      // top: 167px;
+      bottom: 100px;
       font-size: 26px;
       line-height: 1.25;
       opacity: 0.8;
@@ -93,12 +92,13 @@
       }
       h4 {
         opacity: 1;
-        top: 330px;
-        left: 73px;
+        bottom: 0;
+        width: 100%;
         text-align: left;
+        padding: 20px 50px;
+        background-color: #b9b9b986;
       }
       span {
-        top: 300px;
         left: 73px;
         opacity: 1;
         text-align: left;
@@ -107,7 +107,7 @@
         opacity: 1;
       }
       .hy-friends-img {
-        filter: blur(5px);
+        // filter: blur(5px);
       }
     }
   }

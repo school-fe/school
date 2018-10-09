@@ -17,7 +17,7 @@ export default class SlideBanner extends Component {
 
   isSelected = selected => (selected ? ' selected' : '');
 
-  onMouseEnter = (event) => {
+  onMouseEnter = event => {
     const { index } = event.currentTarget.dataset;
     const selectedIndex = parseInt(index, 10);
     if (!isNaN(selectedIndex)) {
@@ -31,6 +31,7 @@ export default class SlideBanner extends Component {
     const { selectedIndex } = this.state;
     return (
       <div className="hy-friends-list">
+        <div className="hy-friends-title">学涯轨迹</div>
         <a
           href=""
           className={`hy-friends-item ${selectedIndex === 0 ? 'selected' : ''}`}
@@ -42,7 +43,9 @@ export default class SlideBanner extends Component {
             className="hy-friends-img"
             src={require('./images/slide1.jpg')}
           />
-          <h4>明德尚行，矢志报国；磨砺青春，升华自我——记初一新生国防教育综合实践活动 </h4>
+          <h4>
+            明德尚行，矢志报国；磨砺青春，升华自我——记初一新生国防教育综合实践活动{' '}
+          </h4>
           <span>25/09</span>
           <p>
             9月1日上午，全体初一新生在学校操场举行开营仪式。祁建欣校长、李梅副校长、刘伟力主任、王磊副主任、年级组长张晓鸥老师、各班班主任、全体教官和同学们出席了本次仪式。仪式上，刘伟力主任代表学校致辞，强调了国防教育实践活动的重要意义，给同学们提出了三项要求，对同学们这五天的军训寄予了厚望。军训教官队长、学生代表也发表了讲话，表达了对本次教育实践活动的期待和信心。

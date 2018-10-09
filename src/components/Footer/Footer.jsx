@@ -23,7 +23,7 @@ export default class FooterLinks extends Component {
         <Row align="center" className="footer-box">
           <Col span="11" className="footer-part">
             <div className="part-info">
-              北京市中关村中学 版权所有©2009-2010{' '}
+              北京市中关村中学知春分校 版权所有©2009-2010{' '}
             </div>
             <a className="part-info" href="http://www.hdzgczx.bjedu.cn/">
               网址：http://www.hdzgczx.bjedu.cn/{' '}
@@ -47,7 +47,7 @@ export default class FooterLinks extends Component {
                 src={require('./images/code.png')}
                 alt=""
               />
-              <p>中关村中学微信公众账号 </p>
+              <p>中关村中学知春分校微信公众账号 </p>
             </div>
             <div className="right-box">
               <img

@@ -120,7 +120,7 @@ export default class AblityItems extends Component {
     },
   ];
 
-  onMouseEnter = (event) => {
+  onMouseEnter = event => {
     const { index } = event.currentTarget.dataset;
     timer = setTimeout(() => {
       const selectedIndex = parseInt(index, 10);
@@ -191,7 +191,7 @@ export default class AblityItems extends Component {
                   <div
                     className="list-item"
                     key={index}
-                    style={style.listItem}
+                    style={style.listItemColumn}
                     data-index={item.id}
                   >
                     <div className="content-second">
@@ -225,5 +225,9 @@ const style = {
   },
   listItem: {
     display: 'flex',
+  },
+  listItemColumn: {
+    display: 'flex',
+    flexDirection: 'column',
   },
 };

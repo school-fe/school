@@ -17,7 +17,7 @@ const headerMenuConfig = [
     path: '#',
   },
   {
-    name: '学习概况',
+    name: '学校概况',
     path: '#1',
     children: [
       { name: '学校简介', path: '/list' },
@@ -49,19 +49,27 @@ const headerMenuConfig = [
     ],
   },
   {
-    name: '党建工作',
+    name: '党建园地',
     path: '#5',
     children: [
-      { name: '名师风采', path: '/list' },
-      { name: '团队建设', path: '/create' },
+      { name: '团旗飘飘', path: '/list' },
+      { name: '党建工作', path: '/create' },
     ],
   },
   {
     name: '学生社区',
     path: '#6',
     children: [
-      { name: '名师风采', path: '/list' },
-      { name: '团队建设', path: '/create' },
+      { name: '艺术天地', path: '/list' },
+      { name: '体育健康', path: '/create' },
+    ],
+  },
+  {
+    name: '招生招聘',
+    path: '#6',
+    children: [
+      { name: '学生招生', path: '/list' },
+      { name: '教师招聘', path: '/create' },
     ],
   },
 ];
